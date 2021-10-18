@@ -1158,7 +1158,7 @@ input, select, textarea {
 			-webkit-transition: -webkit-transform 0.325s ease-in-out, -webkit-filter 0.325s ease-in-out;
 			-ms-transition: -ms-transform 0.325s ease-in-out, -ms-filter 0.325s ease-in-out;
 			transition: transform 0.325s ease-in-out, filter 0.325s ease-in-out;
-			background-image: url("../../images/bg.jpg");
+			background-image: url("../../images/tropical.jpg");
 			background-position: center;
 			background-size: cover;
 			background-repeat: no-repeat;
@@ -1659,3 +1659,88 @@ input, select, textarea {
 		body.is-preload #footer {
 			opacity: 0;
 		}
+
+		.content-section {
+			display: flex;
+			align-items: center;
+			min-height: calc(75vh);
+		}
+		
+		.content-subsection {
+			margin-top: 75px;
+		}
+		
+		.portfolio-container {
+			display: grid;
+			grid-template-columns: repeat(auto-fit, minmax(275px, 1fr));
+			grid-gap: 15px 15px;
+			margin-top: 15px;
+			margin-bottom: 30px;
+		}
+		
+		.portfolio-item {
+			position: relative;
+			display: flex;
+			align-items: flex-start;
+			justify-content: center;
+			background-color: hsl(205, 27%, 27%);
+			box-shadow: 2px 6px 25px rgba(0, 0, 0, 0.5);
+		}
+		
+		.portfolio-item .card-image {
+			margin: 20px 20px 0px 20px;
+			height: 300px;
+			background-size: cover;
+			background-position: center center;
+			background-repeat: no-repeat;
+		}
+		
+		.portfolio-item .card-image-contain {
+			background-size: contain;
+		}
+		
+		.project-inner {
+			padding: 1.5rem;
+		}
+		
+		.project-inner p {
+			margin-bottom: 0;
+		}
+		
+		.portfolio-item:hover .project-info {
+			box-shadow: 2px 6px 25px rgba(0, 0, 0, 0.2);
+			opacity: 1;
+			visibility: visible;
+		}
+		
+		.portfolio-item:hover .project-text {
+			bottom: 50%;
+			transform: translateY(50%);
+			visibility: visible;
+		}
+		
+		.project-info, .project-text {
+			position: absolute;
+			visibility: hidden;
+			left: 0;
+			right: 0;
+			transition: all 0.3s;
+		}
+		
+		.project-info {
+			background-color: rgba(0, 0, 0, 0.6);
+			opacity: 0;
+			top: 0;
+			bottom: 0;
+		}
+		
+		.project-text {
+			bottom: 25%;
+		}
+
+		h3, p {
+			font-weight: 300;
+			text-align: center;
+			line-height: 2rem;
+		}
+		
